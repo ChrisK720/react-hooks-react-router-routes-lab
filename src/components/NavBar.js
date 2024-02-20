@@ -7,13 +7,15 @@ import { NavLink } from "react-router-dom";
 // /: should render the Home component
 
 function NavBar() {
-  return <div>
+  return <div className="navbar">
     <nav>
+    <NavLink to='/'>Home</NavLink>
+    <NavLink to='/movies' exact>Movies</NavLink>
+    <NavLink to='/directors' exact>Directors</NavLink>
+    <NavLink to='/actors' exact>Actors</NavLink>
      
-     <NavLink to='/actors' exact>Actors</NavLink>
-     <NavLink to='/movies' exact>Movies</NavLink>
-     <NavLink to='/directors' exact>Directors</NavLink>
-     <NavLink to='/' >Home</NavLink>
+     
+     
 
 
     </nav>

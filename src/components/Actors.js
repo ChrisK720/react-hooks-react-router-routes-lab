@@ -16,7 +16,7 @@ function Actors() {
                Name:{actor.name}
                <ul>
                 {actor.movies.map((movie) => {
-                  return <li >{movie}</li>
+                  return <li key={movie}>{movie}</li>
                 })}
                </ul>
 

@@ -15,7 +15,7 @@ function Movies() {
              Time Duration:{movie.time}
              <ul>
               {movie.genres.map((genre) => {
-                   return <li>{genre}</li>
+                   return <li key={genre}>{genre}</li>
               })}
 
              </ul>

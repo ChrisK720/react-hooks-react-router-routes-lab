@@ -19,7 +19,7 @@ function Directors() {
               <ul>
                {director.movies.map((movie) => {
                    return (
-                    <li >{movie}</li>
+                    <li key={director.name + movie}>{movie}</li>
                    )
                })}
               </ul>
